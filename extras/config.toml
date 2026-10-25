@@ -1,0 +1,39 @@
+# peepers — example config
+# Copy to ~/.config/peepers/config.toml. Every key is optional.
+
+# Accent for the count buffer, minimap viewport and panel highlights.
+# Design comp options: "#CFAE74" (default), "#9FB8D0", "#D9A08B", "#F3EFE7"
+accent = "#CFAE74"
+
+# Pixels moved by h / j / k / l (multiplied by a count: 3l = 270px).
+pan_step = 90
+
+# Neighbours decoded ahead on each side of the current image.
+prefetch = 2
+
+# Budget for decoded bitmaps, in MiB. The current image is never evicted.
+cache_mb = 768
+
+# Enlarge images smaller than the window to fit it.
+upscale = false
+
+# Slim header: Peepers brand on the left, the `?` shortcut on the right.
+# Hidden in fullscreen (f).
+show_header = true
+
+# With the header off, show "? motions  i info" for a few seconds on launch.
+show_hint = true
+
+# Keybindings: key = action. Keys are single characters ("x", "$", "N")
+# or names: Left Right Up Down Space Backspace Enter Tab PageUp PageDown
+# Home End Escape F11. Use "none" to unbind a default.
+#
+# Actions: pan_left pan_right pan_up pan_down half_left half_right half_up
+# half_down edge_left edge_right edge_bottom zoom_in zoom_out fit info help
+# cancel next prev first last fullscreen quit prefix_g prefix_z mark jump
+# (e.g. "z" = "prefix_z" brings back vim-style zz for fit)
+[keys]
+# "x"   = "quit"
+# "F11" = "fullscreen"
+# "J"   = "next"
+# "K"   = "prev"

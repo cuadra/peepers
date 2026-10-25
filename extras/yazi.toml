@@ -1,0 +1,17 @@
+# peepers — Yazi opener
+# Merge into ~/.config/yazi/yazi.toml.
+#
+# `peepers` detaches from the terminal on its own; `orphan = true` makes Yazi
+# not wait on it either, so browsing continues while the image stays open.
+# Passing the hovered file opens its whole folder at that image, so n / N
+# step through the directory.
+
+[opener]
+peepers = [
+	{ run = 'peepers "$@"', orphan = true, desc = "Peepers", for = "unix" },
+]
+
+[open]
+prepend_rules = [
+	{ mime = "image/*", use = [ "peepers", "open" ] },
+]

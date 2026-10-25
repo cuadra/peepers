@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Peepers
+GenericName=Image Viewer
+Comment=A vim-motion image viewer — the image is the interface
+Exec=peepers %F
+TryExec=peepers
+Icon=image-x-generic
+Terminal=false
+Categories=Graphics;Viewer;2DGraphics;RasterGraphics;
+Keywords=image;photo;picture;viewer;vim;wayland;
+StartupWMClass=peepers
+MimeType=image/jpeg;image/pjpeg;image/png;image/apng;image/gif;image/webp;image/bmp;image/x-bmp;image/tiff;image/x-icon;image/vnd.microsoft.icon;image/x-portable-anymap;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-tga;image/x-targa;image/qoi;image/vnd.radiance;image/x-exr;
